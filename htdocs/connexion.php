@@ -22,6 +22,14 @@
 				{
 					echo "<p class='confirm'> Inscription réussis, vous pouvez maintenant vous connecter avec vos identifiants </p>";
 				}
+				if($_GET['error']==1)
+				{
+					echo "<p class='error'> Identifiant ou mot de passe érroné </p>";
+				}
+				if($_GET['error']==2)
+				{
+					echo "<p class='error'> Vous devez être connecté pour créer une carte </p>";
+				}
 			?>
 		</div>
 		<div class="connexion">

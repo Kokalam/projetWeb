@@ -4,7 +4,6 @@
 	require_once('utilisateur.php');
 	
 	$acc=new accessData;
-	echo "right";
 	if($acc->verifConnex($_POST['identifiant'],$_POST['passwd']))
 	{
 		$_SESSION['user']=$_POST['identifiant'];

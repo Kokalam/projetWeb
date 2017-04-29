@@ -1,0 +1,11 @@
+<?php
+	session_start();
+	if(isset($_SESSION['user']))
+    {
+        header("refresh:0;url=creaCarte.php");
+    } 
+    else
+    {
+		header("refresh:0;url=connexion.php?error=2");
+	}
+?>

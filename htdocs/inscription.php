@@ -29,7 +29,7 @@
 					echo "<p class=error> Mot de passe différent de la confirmation </p>";
 			  }
 		?>
-		<div class="inscription">
+		<div class="formulaire">
 			<form method="post" action="tinscrip.php">
 				<p>
 					Nom: <input type="text" name="nom" onKeyUp="maxLength(this,50);" /> <br>
