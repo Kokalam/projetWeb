@@ -5,15 +5,12 @@
 	require_once('Noeud.php');
 	
 	$acc=new accessData;
-	echo "1";
 	$char='azertyuiopqsdfghjklmwxcvbn987456321';
     do
     {
         $id=str_shuffle($char);
         $id=substr($id,0,8);
     }while(!$acc->idCarte($id));
-    
-    echo $id." ";
 	do
 	{
 		$idnode=str_shuffle($char);
@@ -34,5 +31,4 @@
 	}
 	
 	$acc->addEdit($id,$_SESSION['user'],'administrateur');
-	echo "5";
 ?>
